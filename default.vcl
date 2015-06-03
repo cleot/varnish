@@ -77,15 +77,15 @@ sub vcl_recv {
     # set backend
     set req.backend_hint = apache;
  
-    if (req.http.host == "ulbby-v1.clemensotto.com") {
+    if (req.http.host == "domian1.tld") {
         set req.backend_hint = nginx;
     }
  
-    if (req.http.host == "apfellikelive.ulbby-v1.clemensotto.com") {
+    if (req.http.host == "domian2.tld") {
         set req.backend_hint = nginx;
     }
 
-    if (req.http.host == "live.apfellike.com") {
+    if (req.http.host == "domian3.tld") {
         set req.backend_hint = nginx;
     }
 
